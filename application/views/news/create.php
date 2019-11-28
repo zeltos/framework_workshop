@@ -1,15 +1,22 @@
-<h2><?php echo $title; ?></h2>
+<div class="container">
+  <br>
+  <h2><?php echo $title; ?></h2>
 
-<?php echo validation_errors(); ?>
+  <?php echo validation_errors(); ?>
 
-<?php echo form_open('news/create'); ?>
+  <?php echo form_open('news/create'); ?>
 
-    <label for="title">Title</label>
-    <input type="text" name="title" /><br />
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+      </div>
 
-    <label for="text">Text</label>
-    <textarea name="text"></textarea><br />
+      <div class="form-group">
+        <label for="text">Text</label>
+       <textarea class="form-control" id="text" rows="3" name="text" required></textarea>
+      </div>
 
-    <input type="submit" name="submit" value="Create news item" />
+    <button type="submit" class="btn btn-success">Create a News</button>
 
-</form>
+  </form>
+</div>

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost:5555/framework_workshop/';
+$config['base_url'] = 'http://localhost:5555/framework_workshop_w_bootstrap/';
 
 /*
 |--------------------------------------------------------------------------
